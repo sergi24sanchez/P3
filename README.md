@@ -22,7 +22,7 @@ Ejercicios básicos
      unos 30 ms de un fonema sonoro y su periodo de pitch; y, en otro *subplot*, se vea con claridad la
 	 autocorrelación de la señal y la posición del primer máximo secundario.
 
-   <img src="img/Figura1.png" width="800" align="center">
+    <img src="img/Figura1.png" width="800" align="center">
 
     Como se puede observar, la señal tiene el primer máximo secundario en el valor 143.
 
@@ -32,9 +32,12 @@ Ejercicios básicos
    * Determine el mejor candidato para el periodo de pitch localizando el primer máximo secundario de la
      autocorrelación. Inserte a continuación el código correspondiente.
 
+    <img src="img/Captura1.png" width="800" align="center">
 
 
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
+
+   
 
 - Una vez completados los puntos anteriores, dispondrá de una primera versión del detector de pitch. El 
   resto del trabajo consiste, básicamente, en obtener las mejores prestaciones posibles con él.
