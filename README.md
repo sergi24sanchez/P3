@@ -22,7 +22,7 @@ Ejercicios básicos
      unos 30 ms de un fonema sonoro y su periodo de pitch; y, en otro *subplot*, se vea con claridad la
 	 autocorrelación de la señal y la posición del primer máximo secundario.
 
-   <img src="img/Figura1.png" width="640" align="center">
+   <img src="img/Figura1.png" width="800" align="center">
 
     Como se puede observar, la señal tiene el primer máximo secundario en el valor 143.
 
