@@ -15,7 +15,7 @@ Ejercicios básicos
 
    * Complete el cálculo de la autocorrelación e inserte a continuación el código correspondiente.
 
-    r[m] = 0;
+    {r[m] = 0;
 
       for(unsigned int n = 0; n < x.size()-m; ++n){
 
