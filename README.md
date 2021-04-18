@@ -15,7 +15,6 @@ Ejercicios básicos
 
    * Complete el cálculo de la autocorrelación e inserte a continuación el código correspondiente.
 
-    {
       r[m] = 0;
 
       for(unsigned int n = 0; n < x.size()-m; ++n){
@@ -25,7 +24,7 @@ Ejercicios básicos
       }
 
       r[m] /= x.size();
-    }
+    
 
    * Inserte una gŕafica donde, en un *subplot*, se vea con claridad la señal temporal de un segmento de
      unos 30 ms de un fonema sonoro y su periodo de pitch; y, en otro *subplot*, se vea con claridad la
