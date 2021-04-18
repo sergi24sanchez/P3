@@ -15,7 +15,7 @@ Ejercicios básicos
 
    * Complete el cálculo de la autocorrelación e inserte a continuación el código correspondiente.
 
-    ![alt text](img/Captura0.png "")
+    <img src="img/Captura0.png" width="640" align="center">
     
 
    * Inserte una gŕafica donde, en un *subplot*, se vea con claridad la señal temporal de un segmento de
@@ -23,8 +23,6 @@ Ejercicios básicos
 	 autocorrelación de la señal y la posición del primer máximo secundario.
 
    <img src="img/Figura1.png" width="640" align="center">
-   
-    ![alt text](img/Figura1.png "30ms de un segmento sonoro + Autocorrelación de la señal rl001.wav")
 
     Como se puede observar, la señal tiene el primer máximo secundario en el valor 143.
 
