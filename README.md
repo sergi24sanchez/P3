@@ -15,20 +15,14 @@ Ejercicios básicos
 
    * Complete el cálculo de la autocorrelación e inserte a continuación el código correspondiente.
 
-      r[m] = 0;
-
-      for(unsigned int n = 0; n < x.size()-m; ++n){
-
-        r[m]+= x[n]*x[n+m];
-
-      }
-
-      r[m] /= x.size();
+    ![alt text](img/Captura0.png "")
     
 
    * Inserte una gŕafica donde, en un *subplot*, se vea con claridad la señal temporal de un segmento de
      unos 30 ms de un fonema sonoro y su periodo de pitch; y, en otro *subplot*, se vea con claridad la
 	 autocorrelación de la señal y la posición del primer máximo secundario.
+
+   <img src="img/Figura1.png" width="640" align="center">
     ![alt text](img/Figura1.png "30ms de un segmento sonoro + Autocorrelación de la señal rl001.wav")
 
     Como se puede observar, la señal tiene el primer máximo secundario en el valor 143.
@@ -38,6 +32,8 @@ Ejercicios básicos
 
    * Determine el mejor candidato para el periodo de pitch localizando el primer máximo secundario de la
      autocorrelación. Inserte a continuación el código correspondiente.
+
+
 
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
 
