@@ -23,6 +23,7 @@ Ejercicios básicos
 	 autocorrelación de la señal y la posición del primer máximo secundario.
 
    <img src="img/Figura1.png" width="640" align="center">
+   
     ![alt text](img/Figura1.png "30ms de un segmento sonoro + Autocorrelación de la señal rl001.wav")
 
     Como se puede observar, la señal tiene el primer máximo secundario en el valor 143.
