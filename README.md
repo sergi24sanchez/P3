@@ -66,7 +66,7 @@ Ejercicios básicos
     unsigned int lag = iRMax - r.begin();
 
     float pot = 10 * log10(r[0]);
-    <img src="img/Captura01.png" width="640" align="center">
+  }
   ```
 
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
@@ -77,7 +77,6 @@ Ejercicios básicos
   else
     return (float) samplingFreq/(float) lag;
   ```
-
 
 
 - Una vez completados los puntos anteriores, dispondrá de una primera versión del detector de pitch. El 
