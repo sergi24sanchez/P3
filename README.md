@@ -52,6 +52,7 @@ Ejercicios básicos
 		(r[0]), la autocorrelación normalizada de uno (r1norm = r[1] / r[0]) y el valor de la
 		autocorrelación en su máximo secundario (rmaxnorm = r[lag] / r[0]).
 
+    Se visualiza rmaxnorm (arriba), r1norm (centro) y la potencia de la señal (abajo):
     <img src="img/Captura04.png" width="640" align="center">
 
     Visualización de la detección del pitch:
