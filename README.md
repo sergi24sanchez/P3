@@ -37,6 +37,8 @@ Ejercicios básicos
 
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
 
+   <img src="img/Captura3.png" width="640" align="center">
+
 
 
 - Una vez completados los puntos anteriores, dispondrá de una primera versión del detector de pitch. El 
