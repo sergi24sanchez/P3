@@ -25,9 +25,7 @@ Ejercicios básicos
       }
       r[m] /= x.size();
     }
-    ```
-    <img src="img/Captura00.png" width="640" align="center">
-    
+    ```    
 
    * Inserte una gŕafica donde, en un *subplot*, se vea con claridad la señal temporal de un segmento de
      unos 30 ms de un fonema sonoro y su periodo de pitch; y, en otro *subplot*, se vea con claridad la
@@ -43,8 +41,33 @@ Ejercicios básicos
    * Determine el mejor candidato para el periodo de pitch localizando el primer máximo secundario de la
      autocorrelación. Inserte a continuación el código correspondiente.
 
-    <img src="img/Captura01.png" width="640" align="center">
+  ```c
+  float PitchAnalyzer::compute_pitch(vector<float> & x) const {
+    if (x.size() != frameLen)
+      return -1.0F;
 
+    //Window input frame
+    for (unsigned int i=0; i<x.size(); ++i)
+      x[i] *= window[i];
+
+    vector<float> r(npitch_max);
+
+    //Compute correlation
+    autocorrelation(x, r);
+
+    //vector<float>::const_iterator iR = r.begin(), 
+    vector<float>::const_iterator iRMax = r.begin() + npitch_min;
+
+    for(vector<float>::const_iterator iR = iRMax; iR < r.end(); iR++){
+      if(*iR > *iRMax){
+        iRMax = iR;
+      }
+    }
+    unsigned int lag = iRMax - r.begin();
+
+    float pot = 10 * log10(r[0]);
+    <img src="img/Captura01.png" width="640" align="center">
+  ```
 
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
 
