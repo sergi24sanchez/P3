@@ -37,7 +37,7 @@ Ejercicios básicos
 
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
 
-   <img src="img/Captura03.png" width="640" align="center">
+   <img src="img/Captura03.png" width="450" align="center">
 
 
 
