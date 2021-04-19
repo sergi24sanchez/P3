@@ -62,10 +62,11 @@ namespace upc {
     /// \TODO Implement a rule to decide whether the sound is voiced or not.
     /// * You can use the standard features (pot, r1norm, rmaxnorm),
     ///   or compute and use other ones.
-    if (pot < -49 || r1norm < 0.87 || rmaxnorm < 0.30) //son parametres escollits fent proves
+    /*if (pot < -49 || r1norm < 0.87 || rmaxnorm < 0.30) //son parametres escollits fent proves
       return true;
     else
-      return false;
+      return false;*/
+    return false;
     /// \DONE
   }
 

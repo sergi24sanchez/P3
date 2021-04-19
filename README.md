@@ -72,10 +72,13 @@ Ejercicios básicos
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
 
   ```c
-  if (unvoiced(pot, r[1]/r[0], r[lag]/r[0]))
-    return 0;
-  else
-    return (float) samplingFreq/(float) lag;
+  bool PitchAnalyzer::unvoiced(float pot, float r1norm, float rmaxnorm) const {
+    
+    if (pot < pot_value || r1norm < r1_value || rmaxnorm < rmax_value) //son parametres escollits fent proves
+      return true;
+    else
+      return false;
+  }
   ```
 
 
@@ -99,7 +102,7 @@ Ejercicios básicos
 
 		Puede considerar, también, la conveniencia de usar la tasa de cruces por cero.
 
-	    Recuerde configurar los paneles de datos para que el desplazamiento de ventana sea el adecuado, que
+	  Recuerde configurar los paneles de datos para que el desplazamiento de ventana sea el adecuado, que
 		en esta práctica es de 15 ms.
 
       - Use el detector de pitch implementado en el programa `wavesurfer` en una señal de prueba y compare
@@ -113,6 +116,9 @@ Ejercicios básicos
   * Optimice los parámetros de su sistema de detección de pitch e inserte una tabla con las tasas de error
     y el *score* TOTAL proporcionados por `pitch_evaluate` en la evaluación de la base de datos 
 	`pitch_db/train`..
+
+  Con los parámetros iniciales, nuestro sistema de detección de pitch tiene una puntuación de 90.94%
+  <img src="img/Captura07.png" width="640" align="center">
 
    * Inserte una gráfica en la que se vea con claridad el resultado de su detector de pitch junto al del
      detector de Wavesurfer. Aunque puede usarse Wavesurfer para obtener la representación, se valorará
