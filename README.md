@@ -37,6 +37,12 @@ Ejercicios básicos
 
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
 
+  ```c
+  if (unvoiced(pot, r[1]/r[0], r[lag]/r[0]))
+    return 0;
+  else
+    return (float) samplingFreq/(float) lag;
+  ```
    <img src="img/Captura03.png" width="450" align="center">
 
 
