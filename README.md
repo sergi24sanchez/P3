@@ -15,7 +15,7 @@ Ejercicios básicos
 
    * Complete el cálculo de la autocorrelación e inserte a continuación el código correspondiente.
 
-    <img src="img/Captura0.png" width="640" align="center">
+    <img src="img/Captura00.png" width="640" align="center">
     
 
    * Inserte una gŕafica donde, en un *subplot*, se vea con claridad la señal temporal de un segmento de
@@ -32,12 +32,12 @@ Ejercicios básicos
    * Determine el mejor candidato para el periodo de pitch localizando el primer máximo secundario de la
      autocorrelación. Inserte a continuación el código correspondiente.
 
-    <img src="img/Captura1.png" width="640" align="center">
+    <img src="img/Captura01.png" width="640" align="center">
 
 
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
 
-   <img src="img/Captura3.png" width="640" align="center">
+   <img src="img/Captura03.png" width="640" align="center">
 
 
 
