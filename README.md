@@ -15,6 +15,17 @@ Ejercicios básicos
 
    * Complete el cálculo de la autocorrelación e inserte a continuación el código correspondiente.
 
+    ```c
+    for (unsigned int m = 0; m < r.size(); ++m) {
+  		/// \TODO Compute the autocorrelation r[l]
+      /// \DONE Autocorrelation computed
+      r[m] = 0;
+      for(unsigned int n = 0; n < x.size()-m; ++n){
+        r[m]+= x[n]*x[n+m];
+      }
+      r[m] /= x.size();
+    }
+    ```
     <img src="img/Captura00.png" width="640" align="center">
     
 
@@ -43,7 +54,6 @@ Ejercicios básicos
   else
     return (float) samplingFreq/(float) lag;
   ```
-   <img src="img/Captura03.png" width="450" align="center">
 
 
 
