@@ -108,6 +108,7 @@ namespace upc {
     if (r[0] > 0.0F)
       cout << pot << '\t' << r[1]/r[0] << '\t' << r[lag]/r[0] << endl;
 #endif
+  
     
     if (unvoiced(pot, r[1]/r[0], r[lag]/r[0]))
       return 0;
