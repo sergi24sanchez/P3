@@ -21,7 +21,7 @@ namespace upc {
     }
 
     if (r[0] == 0.0F) //to avoid log() and divide zero 
-      r[0] = 1e-10; 
+      r[0] = 1e-10;
   }
 
   void PitchAnalyzer::set_window(Window win_type) {
@@ -29,14 +29,14 @@ namespace upc {
       return;
 
     window.resize(frameLen);
-    const float c0 = 0.54;
-    const float c1 = 0.46;
+    const float c0 = 0.5435;
+    const float c1 = 1 - c0;
     switch (win_type) {
     case HAMMING:
       /// \TODO Implement the Hamming window
       
       for(unsigned int i = 0; i < frameLen; i++){
-        window[i] = c0 - c1*cos((2*M_PI*i)/frameLen);
+        window[i] = c0 - c1*cos((2*M_PI*i)/(frameLen-1));
       }
       /// \DONE
       break;
@@ -62,11 +62,19 @@ namespace upc {
     /// \TODO Implement a rule to decide whether the sound is voiced or not.
     /// * You can use the standard features (pot, r1norm, rmaxnorm),
     ///   or compute and use other ones.
-    /*if (pot < -49 || r1norm < 0.87 || rmaxnorm < 0.30) //son parametres escollits fent proves
+    float score = 0;
+    const float potvalue = -49.0F, r1value = 0.87F, rmaxvalue = 0.30F;
+
+    if(pot < potvalue)
+      score += 0.5;
+    else if (r1norm < r1value)
+      score += 0.5;
+    else if (rmaxnorm < rmaxvalue)
+      score += 0.5;
+    if (score >= 0.5)
       return true;
     else
-      return false;*/
-    return false;
+      return false;
     /// \DONE
   }
 
@@ -111,7 +119,7 @@ namespace upc {
 #endif
   
     
-    if (unvoiced(pot, r[1]/r[0], r[lag]/r[0]))
+    if (unvoiced(pot, r[1]/r[0], r[lag]/r[0], max_pot_value))
       return 0;
     else
       return (float) samplingFreq/(float) lag;
