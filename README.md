@@ -124,9 +124,10 @@ Ejercicios básicos
   }
   ```
   > La regla de decisión de una trama sorda, se decide con 3 umbrales correspondientes a la energia de la trama (pot_value), la autocorrelacion en 1 normalizada (r1_value) y autocorrelación en el máximo encontrado normalizada (rmax_value).
-  
+  >
   > Se decide que una trama es sorda cuando se cumple cualquiera de estos umbrales.
-  > Lo hemos decidido de esta forma ya que hemos observado lo siguiente: cuando la potencia baja de un cierto umbral es un buen indicador de que esa trama es silencio; cuando la autocorrelacion en 1 es muy diferente de la energía de la trama nos ayuda a detectar sonidos sordos; y cuando la rmax normalizada está por debajo de un cierto umbral es que no está marcada claramente la periocidad predominante.
+  >
+  > Lo hemos decidido de esta forma ya que hemos observado lo siguiente: cuando la potencia baja de un cierto umbral es un buen indicador de que esa trama es silencio; cuando la autocorrelacion en 1 es muy diferente de la energía de la trama (r[0]), nos ayuda a detectar sonidos sordos; y cuando la rmax normalizada está por debajo de un cierto umbral es que no está marcada claramente la periocidad predominante.
 
 - Una vez completados los puntos anteriores, dispondrá de una primera versión del detector de pitch. El 
   resto del trabajo consiste, básicamente, en obtener las mejores prestaciones posibles con él.
@@ -179,30 +180,31 @@ Ejercicios básicos
 	 el uso de alternativas de mayor calidad (particularmente Python).
    > <img src="img/Figura2.png" width="640" align="center">
    > A continuación se muestra el código de Python empleado para la representación:
+   >
    > ```c
    > import numpy as np
-import matplotlib.pyplot as plt
-arxiu1='rl001_wavesurfer.txt'
-arxiu2='/Users/sergi24sanchez/PAV/P3/pitch_db/train/rl001.f0' 
+    import matplotlib.pyplot as plt
+    arxiu1='rl001_wavesurfer.txt'
+    arxiu2='/Users/sergi24sanchez/PAV/P3/pitch_db/train/rl001.f0' 
 
-wavesurfer = np.loadtxt(arxiu1,skiprows=0)
-estimacion = np.loadtxt(arxiu2,skiprows=0)
+    wavesurfer = np.loadtxt(arxiu1,skiprows=0)
+    estimacion = np.loadtxt(arxiu2,skiprows=0)
 
-dm = 0.015
-#Time vector
-samples = []
-for i in range(0,len(estimacion)):
-    samples.append(i*dm)
+    dm = 0.015
+    #Time vector
+    samples = []
+    for i in range(0,len(estimacion)):
+        samples.append(i*dm)
 
 
-plt.plot(samples,estimacion,'g',lineWidth=1,label='Pitch detector')
-plt.plot(samples,wavesurfer,'r',lineWidth=1.5,label='Wavesurfer pitch detector')
-plt.title('Estimacio de Pitch')
-plt.xlabel('Time[s]')
-plt.ylabel('Frequency[Hz]')
-plt.xlim(0,1.24)
-plt.legend(loc='upper right')
-```
+    plt.plot(samples,estimacion,'g',lineWidth=1,label='Pitch detector')
+    plt.plot(samples,wavesurfer,'r',lineWidth=1.5,label='Wavesurfer pitch detector')
+    plt.title('Estimacio de Pitch')
+    plt.xlabel('Time[s]')
+    plt.ylabel('Frequency[Hz]')
+    plt.xlim(0,1.24)
+    plt.legend(loc='upper right')
+    ```
    
 
 Ejercicios de ampliación
