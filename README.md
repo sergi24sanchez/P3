@@ -124,6 +124,7 @@ Ejercicios básicos
   }
   ```
   > La regla de decisión de una trama sorda, se decide con 3 umbrales correspondientes a la energia de la trama (pot_value), la autocorrelacion en 1 normalizada (r1_value) y autocorrelación en el máximo encontrado normalizada (rmax_value).
+  
   > Se decide que una trama es sorda cuando se cumple cualquiera de estos umbrales.
   > Lo hemos decidido de esta forma ya que hemos observado lo siguiente: cuando la potencia baja de un cierto umbral es un buen indicador de que esa trama es silencio; cuando la autocorrelacion en 1 es muy diferente de la energía de la trama nos ayuda a detectar sonidos sordos; y cuando la rmax normalizada está por debajo de un cierto umbral es que no está marcada claramente la periocidad predominante.
 
