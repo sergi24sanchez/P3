@@ -86,6 +86,7 @@ int main(int argc, const char *argv[]) {
     else x[i] = 0;
   }
 #endif
+printf("%f",max_value);
 
 //Center-Clipping 2
 #if 0
@@ -98,9 +99,9 @@ int main(int argc, const char *argv[]) {
 #endif
 
 //Low-Pass Filter
-#if 1
+#if 0
   // Definimos FFTReal
-   ffft::FFTReal <float> fft_object1 (1024); //Creamos el objeto de la clase FFTReal (dónde estan las funciones)
+   ffft::FFTReal <float> fft_object1 (8192); //Creamos el objeto de la clase FFTReal (dónde estan las funciones)
 
    //Filtrado Paso-Bajo en frecuencia
  // ==================================================================================================
@@ -169,7 +170,8 @@ int main(int argc, const char *argv[]) {
   /// or time-warping may be used.
   ///
 #if 0
-
+  unsigned int median_win = 3;
+  
 #endif
 
   // Write f0 contour into the output file
