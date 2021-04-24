@@ -45,7 +45,7 @@ namespace upc {
 	///
 	/// Returns true is the frame is unvoiced
 	///
-    bool unvoiced(float pot, float r1norm, float rmaxnorm, float max_pot_value) const;
+    bool unvoiced(float pot, float r1norm, float rmaxnorm) const;
 
 
   public:
@@ -53,14 +53,13 @@ namespace upc {
 					unsigned int sFreq,			///< Sampling rate in Hertzs
 					Window w=PitchAnalyzer::HAMMING,	///< Window type
 					float min_F0 = MIN_F0,		///< Pitch range should be restricted to be above this value
-					float max_F0 = MAX_F0,		///< Pitch range should be restricted to be below this value
+					float max_F0 = MAX_F0		///< Pitch range should be restricted to be below this value
 				)
 	{
       frameLen = fLen;
       samplingFreq = sFreq;
       set_f0_range(min_F0, max_F0);
       set_window(w);
-      max_pot_value = max_value;
     }
 
 	///

@@ -119,7 +119,7 @@ namespace upc {
 #endif
   
     
-    if (unvoiced(pot, r[1]/r[0], r[lag]/r[0], max_pot_value))
+    if (unvoiced(pot, r[1]/r[0], r[lag]/r[0]))
       return 0;
     else
       return (float) samplingFreq/(float) lag;

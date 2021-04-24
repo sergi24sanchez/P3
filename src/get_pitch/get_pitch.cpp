@@ -62,7 +62,7 @@ int main(int argc, const char *argv[]) {
   int n_shift = rate * FRAME_SHIFT;
   float max_value = *max_element(x.begin(),x.end());
   // Define analyzer
-  PitchAnalyzer analyzer(n_len, rate, PitchAnalyzer::HAMMING, 50, 500, max_value);
+  PitchAnalyzer analyzer(n_len, rate, PitchAnalyzer::HAMMING, 50, 500);
 
   /// \TODO
   /// Preprocess the input signal in order to ease pitch estimation. For instance,
