@@ -180,6 +180,7 @@ Ejercicios básicos
 	 el uso de alternativas de mayor calidad (particularmente Python).
 
    > <img src="img/Figura2.png" width="640" align="center">
+   >
    > A continuación se muestra el código de Python empleado para la representación:
    >
     ```c
