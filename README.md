@@ -178,11 +178,12 @@ Ejercicios básicos
    * Inserte una gráfica en la que se vea con claridad el resultado de su detector de pitch junto al del
      detector de Wavesurfer. Aunque puede usarse Wavesurfer para obtener la representación, se valorará
 	 el uso de alternativas de mayor calidad (particularmente Python).
+
    > <img src="img/Figura2.png" width="640" align="center">
    > A continuación se muestra el código de Python empleado para la representación:
    >
-   > ```c
-   > import numpy as np
+    ```c
+    import numpy as np
     import matplotlib.pyplot as plt
     arxiu1='rl001_wavesurfer.txt'
     arxiu2='/Users/sergi24sanchez/PAV/P3/pitch_db/train/rl001.f0' 
