@@ -38,7 +38,8 @@ Ejercicios básicos
     > Estimamos que el periodo de pitch son 0.007 segundos.
     >
     > Como se puede observar, la señal tiene el primer máximo secundario aproximadamente en el valor 143. Coincide con inverso del periodo de pitch.
-    > <img src="img/Captura08.png" width="400" align="center">
+    >
+    > <img src="img/Captura08.png" width="200" align="center">
 
 	 NOTA: es más que probable que tenga que usar Python, Octave/MATLAB u otro programa semejante para
 	 hacerlo. Se valorará la utilización de la librería matplotlib de Python.
