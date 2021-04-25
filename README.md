@@ -116,8 +116,16 @@ Ejercicios básicos
 
   ```c
   bool PitchAnalyzer::unvoiced(float pot, float r1norm, float rmaxnorm) const {
-    
-    if (pot < pot_value || r1norm < r1_value || rmaxnorm < rmax_value) //son parametres escollits fent proves
+    float score = 0;
+    const float potvalue = potvalue_th, r1value = r1norm_th, rmaxvalue = rmaxnorm_th;
+
+    if(pot < potvalue)
+      score += 0.5;
+    else if (r1norm < r1value)
+      score += 0.5;
+    else if (rmaxnorm < rmaxvalue)
+      score += 0.5;
+    if (score >= 0.5)
       return true;
     else
       return false;
@@ -166,13 +174,13 @@ Ejercicios básicos
 
   > Los valores de los umbrales que funcionan mejor para la detección de las tramas sordas son:
   >
-  > Potencia inferior a -49 dB
+  > Potencia inferior a -49 dB.
   >
-  > Autocorrelacion en 1 normalizada (r1norm) inferior a 0.87
+  > Autocorrelacion en 1 normalizada (r1norm) inferior a 0.84.
   >
-  > Autocorrelacion en el primer máximo normalizada inferior (rmaxnorm) a 0.30
+  > Autocorrelacion en el primer máximo normalizada inferior (rmaxnorm) a 0.29.
 
-  > Con los parámetros iniciales, nuestro sistema de detección de pitch tiene una puntuación de 90.96%
+  > Con los parámetros optimizados, y sin ningún preprocesado ni postprocedado, nuestro sistema de detección de pitch tiene una puntuación de 90.98%
   > <img src="img/Captura07.png" width="640" align="center">
 
    * Inserte una gráfica en la que se vea con claridad el resultado de su detector de pitch junto al del
@@ -221,13 +229,26 @@ Ejercicios de ampliación
 
   * Inserte un *pantallazo* en el que se vea el mensaje de ayuda del programa y un ejemplo de utilización
     con los argumentos añadidos.
-
+  > Se han incorporado los 3 parámetros que gobiernan la decisión voiced/unvoiced
+  > <img src="img/Captura10.png" width="640" align="center">
+  >
+  > Un ejemplo de utilización:
+  > <img src="img/Captura11.png" width="640" align="center">
 - Implemente las técnicas que considere oportunas para optimizar las prestaciones del sistema de detección
   de pitch.
 
   Entre las posibles mejoras, puede escoger una o más de las siguientes:
 
   * Técnicas de preprocesado: filtrado paso bajo, *center clipping*, etc.
+  > Se ha implementado center clipping sin offset y filtro paso bajo con frecuencia de corte de 2000 Hz
+  ```c
+  // Center-Clipping
+  for (unsigned int i = 0; i < x.size(); i++){
+    if(abs(x[i]) / max_value < 0.009) // Valor optimitzat
+      x[i] = 0.0F;
+  }
+  ```
+
   * Técnicas de postprocesado: filtro de mediana, *dynamic time warping*, etc.
   * Métodos alternativos a la autocorrelación: procesado cepstral, *average magnitude difference function*
     (AMDF), etc.

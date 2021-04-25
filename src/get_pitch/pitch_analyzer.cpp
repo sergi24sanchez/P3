@@ -63,8 +63,16 @@ namespace upc {
     /// * You can use the standard features (pot, r1norm, rmaxnorm),
     ///   or compute and use other ones.
     float score = 0;
-    const float potvalue = -49.0F, r1value = 0.87F, rmaxvalue = 0.30F;
+    static float power_first_window = 0;
+    static int window = 0;
+    //const float potvalue = power_first_window + potvalue_th, r1value = r1norm_th, rmaxvalue = rmaxnorm_th;
+    const float potvalue = potvalue_th, r1value = r1norm_th, rmaxvalue = rmaxnorm_th;
 
+    /*if(window == 0){
+      power_first_window = pot;
+      window = 1;
+      return true;
+    }*/
     if(pot < potvalue)
       score += 0.5;
     else if (r1norm < r1value)
@@ -109,6 +117,7 @@ namespace upc {
     unsigned int lag = iRMax - r.begin();
 
     float pot = 10 * log10(r[0]);
+
 
     //You can print these (and other) features, look at them using wavesurfer
     //Based on that, implement a rule for unvoiced

@@ -30,7 +30,7 @@ namespace upc {
       samplingFreq, ///< sampling rate (in samples per second). Has to be set in the constructor call
       npitch_min, ///< minimum value of pitch period, in samples
       npitch_max; ///< maximum value of pitch period, in samples
-    float max_pot_value; ///< maximum value of power of the signal
+    float potvalue_th, r1norm_th, rmaxnorm_th;
  
 	///
 	/// Computes correlation from lag=0 to r.size()
@@ -51,6 +51,7 @@ namespace upc {
   public:
     PitchAnalyzer(	unsigned int fLen,			///< Frame length in samples
 					unsigned int sFreq,			///< Sampling rate in Hertzs
+          float potvalue, float r1norm, float rmaxnorm,
 					Window w=PitchAnalyzer::HAMMING,	///< Window type
 					float min_F0 = MIN_F0,		///< Pitch range should be restricted to be above this value
 					float max_F0 = MAX_F0		///< Pitch range should be restricted to be below this value
@@ -60,6 +61,9 @@ namespace upc {
       samplingFreq = sFreq;
       set_f0_range(min_F0, max_F0);
       set_window(w);
+      potvalue_th = potvalue;
+      r1norm_th = r1norm;
+      rmaxnorm_th= rmaxnorm;
     }
 
 	///
