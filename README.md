@@ -249,8 +249,6 @@ Ejercicios de ampliación
   }
 
   // Low-Pass Filter
-// ==================================================================================================
-
   ffft::FFTReal <float> fft_object1 (1024);
   // FFT TRANSFORM
   std::vector<float> Xlow;
@@ -277,7 +275,6 @@ Ejercicios de ampliación
    // ANTITRANSFORM
    fft_object1.do_ifft (Xlow.data(), x.data());
    fft_object1.rescale (x.data());
- // ==================================================================================================*/
   ```
 
   * Técnicas de postprocesado: filtro de mediana, *dynamic time warping*, etc.
