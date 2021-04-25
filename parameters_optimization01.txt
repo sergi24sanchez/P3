@@ -1,54 +1,72 @@
 Param: potvalue: -49.5    r1norm: 0.84     rmaxnorm: 0.28
-===>	TOTAL:	90.98 %
-Param: potvalue: -49.5    r1norm: 0.84     rmaxnorm: 0.3
-===>	TOTAL:	91.02 %
-Param: potvalue: -49.5    r1norm: 0.84     rmaxnorm: 0.32
-===>	TOTAL:	90.92 %
+===>	TOTAL:	90.85 %
+Param: potvalue: -49.5    r1norm: 0.84     rmaxnorm: 0.29
+===>	TOTAL:	90.88 %
+Param: potvalue: -49.5    r1norm: 0.84     rmaxnorm: 0.30
+===>	TOTAL:	90.87 %
 Param: potvalue: -49.5    r1norm: 0.85     rmaxnorm: 0.28
-===>	TOTAL:	90.97 %
-Param: potvalue: -49.5    r1norm: 0.85     rmaxnorm: 0.3
-===>	TOTAL:	91.00 %
-Param: potvalue: -49.5    r1norm: 0.85     rmaxnorm: 0.32
+===>	TOTAL:	90.88 %
+Param: potvalue: -49.5    r1norm: 0.85     rmaxnorm: 0.29
 ===>	TOTAL:	90.91 %
+Param: potvalue: -49.5    r1norm: 0.85     rmaxnorm: 0.30
+===>	TOTAL:	90.90 %
 Param: potvalue: -49.5    r1norm: 0.86     rmaxnorm: 0.28
+===>	TOTAL:	90.89 %
+Param: potvalue: -49.5    r1norm: 0.86     rmaxnorm: 0.29
 ===>	TOTAL:	90.91 %
-Param: potvalue: -49.5    r1norm: 0.86     rmaxnorm: 0.3
-===>	TOTAL:	90.94 %
-Param: potvalue: -49.5    r1norm: 0.86     rmaxnorm: 0.32
-===>	TOTAL:	90.84 %
-Param: potvalue: -49    r1norm: 0.84     rmaxnorm: 0.28
-===>	TOTAL:	90.99 %
-Param: potvalue: -49    r1norm: 0.84     rmaxnorm: 0.3
-===>	TOTAL:	91.02 %
-Param: potvalue: -49    r1norm: 0.84     rmaxnorm: 0.32
+Param: potvalue: -49.5    r1norm: 0.86     rmaxnorm: 0.30
+===>	TOTAL:	90.88 %
+Param: potvalue: -49.5    r1norm: 0.87     rmaxnorm: 0.28
+===>	TOTAL:	90.92 %
+Param: potvalue: -49.5    r1norm: 0.87     rmaxnorm: 0.29
+===>	TOTAL:	90.96 %
+Param: potvalue: -49.5    r1norm: 0.87     rmaxnorm: 0.30
 ===>	TOTAL:	90.93 %
+Param: potvalue: -49    r1norm: 0.84     rmaxnorm: 0.28
+===>	TOTAL:	90.87 %
+Param: potvalue: -49    r1norm: 0.84     rmaxnorm: 0.29
+===>	TOTAL:	90.90 %
+Param: potvalue: -49    r1norm: 0.84     rmaxnorm: 0.30
+===>	TOTAL:	90.90 %
 Param: potvalue: -49    r1norm: 0.85     rmaxnorm: 0.28
-===>	TOTAL:	90.97 %
-Param: potvalue: -49    r1norm: 0.85     rmaxnorm: 0.3
-===>	TOTAL:	91.01 %
-Param: potvalue: -49    r1norm: 0.85     rmaxnorm: 0.32
+===>	TOTAL:	90.90 %
+Param: potvalue: -49    r1norm: 0.85     rmaxnorm: 0.29
+===>	TOTAL:	90.93 %
+Param: potvalue: -49    r1norm: 0.85     rmaxnorm: 0.30
 ===>	TOTAL:	90.92 %
 Param: potvalue: -49    r1norm: 0.86     rmaxnorm: 0.28
-===>	TOTAL:	90.92 %
-Param: potvalue: -49    r1norm: 0.86     rmaxnorm: 0.3
-===>	TOTAL:	90.95 %
-Param: potvalue: -49    r1norm: 0.86     rmaxnorm: 0.32
-===>	TOTAL:	90.85 %
+===>	TOTAL:	90.91 %
+Param: potvalue: -49    r1norm: 0.86     rmaxnorm: 0.29
+===>	TOTAL:	90.93 %
+Param: potvalue: -49    r1norm: 0.86     rmaxnorm: 0.30
+===>	TOTAL:	90.91 %
+Param: potvalue: -49    r1norm: 0.87     rmaxnorm: 0.28
+===>	TOTAL:	90.94 %
+Param: potvalue: -49    r1norm: 0.87     rmaxnorm: 0.29
+===>	TOTAL:	90.98 %
+Param: potvalue: -49    r1norm: 0.87     rmaxnorm: 0.30
+===>	TOTAL:	90.96 %
 Param: potvalue: -48.5    r1norm: 0.84     rmaxnorm: 0.28
-===>	TOTAL:	90.92 %
-Param: potvalue: -48.5    r1norm: 0.84     rmaxnorm: 0.3
-===>	TOTAL:	90.96 %
-Param: potvalue: -48.5    r1norm: 0.84     rmaxnorm: 0.32
-===>	TOTAL:	90.87 %
-Param: potvalue: -48.5    r1norm: 0.85     rmaxnorm: 0.28
-===>	TOTAL:	90.92 %
-Param: potvalue: -48.5    r1norm: 0.85     rmaxnorm: 0.3
-===>	TOTAL:	90.96 %
-Param: potvalue: -48.5    r1norm: 0.85     rmaxnorm: 0.32
-===>	TOTAL:	90.87 %
-Param: potvalue: -48.5    r1norm: 0.86     rmaxnorm: 0.28
-===>	TOTAL:	90.87 %
-Param: potvalue: -48.5    r1norm: 0.86     rmaxnorm: 0.3
-===>	TOTAL:	90.90 %
-Param: potvalue: -48.5    r1norm: 0.86     rmaxnorm: 0.32
 ===>	TOTAL:	90.80 %
+Param: potvalue: -48.5    r1norm: 0.84     rmaxnorm: 0.29
+===>	TOTAL:	90.83 %
+Param: potvalue: -48.5    r1norm: 0.84     rmaxnorm: 0.30
+===>	TOTAL:	90.83 %
+Param: potvalue: -48.5    r1norm: 0.85     rmaxnorm: 0.28
+===>	TOTAL:	90.82 %
+Param: potvalue: -48.5    r1norm: 0.85     rmaxnorm: 0.29
+===>	TOTAL:	90.85 %
+Param: potvalue: -48.5    r1norm: 0.85     rmaxnorm: 0.30
+===>	TOTAL:	90.84 %
+Param: potvalue: -48.5    r1norm: 0.86     rmaxnorm: 0.28
+===>	TOTAL:	90.85 %
+Param: potvalue: -48.5    r1norm: 0.86     rmaxnorm: 0.29
+===>	TOTAL:	90.87 %
+Param: potvalue: -48.5    r1norm: 0.86     rmaxnorm: 0.30
+===>	TOTAL:	90.85 %
+Param: potvalue: -48.5    r1norm: 0.87     rmaxnorm: 0.28
+===>	TOTAL:	90.89 %
+Param: potvalue: -48.5    r1norm: 0.87     rmaxnorm: 0.29
+===>	TOTAL:	90.92 %
+Param: potvalue: -48.5    r1norm: 0.87     rmaxnorm: 0.30
+===>	TOTAL:	90.90 %
