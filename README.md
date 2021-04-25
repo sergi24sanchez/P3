@@ -301,8 +301,8 @@ Ejercicios de ampliación
     > El primer fichero es el usado para optimizar los parámetros antes de haber implementado técnicas de pre y postprocesado.
     > El segundo, es la optimización definitiva, la cual tiene en cuenta las ventajas del center-clipping, el filtrado paso-bajo y el filtro de mediana.
     > De esta optimización podemos extraer que el valor para **potvalue** debe ser -49, para **r1norm** debe ser 0.84 y para **rmaxnorm** debe ser 0.29. Obtenemos la siguiente puntuación:
-    > <img src="img/Captura09.png" width="640" align="center">
-    
+    > <img src="img/Captura09.png" width="500" align="center">
+
   * Cualquier otra técnica que se le pueda ocurrir o encuentre en la literatura.
 
   Encontrará más información acerca de estas técnicas en las [Transparencias del Curso](https://atenea.upc.edu/pluginfile.php/2908770/mod_resource/content/3/2b_PS%20Techniques.pdf)
