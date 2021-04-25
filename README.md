@@ -181,7 +181,7 @@ Ejercicios básicos
   > Autocorrelacion en el primer máximo normalizada inferior (rmaxnorm) a 0.29.
 
   > Con los parámetros optimizados, y sin ningún preprocesado ni postprocedado, nuestro sistema de detección de pitch tiene una puntuación de 90.98%
-  > <img src="img/Captura07.png" width="640" align="center">
+  > <img src="img/Captura07.png" width="500" align="center">
 
    * Inserte una gráfica en la que se vea con claridad el resultado de su detector de pitch junto al del
      detector de Wavesurfer. Aunque puede usarse Wavesurfer para obtener la representación, se valorará
