@@ -247,6 +247,37 @@ Ejercicios de ampliación
     if(abs(x[i]) / max_value < 0.009) // Valor optimitzat
       x[i] = 0.0F;
   }
+
+  // Low-Pass Filter
+// ==================================================================================================
+
+  ffft::FFTReal <float> fft_object1 (1024);
+  // FFT TRANSFORM
+  std::vector<float> Xlow;
+  Xlow.resize(x.size());
+  fft_object1.do_fft(Xlow.data(),x.data());
+
+
+  // LOW-PASS FILTER DEFINITION
+  std::vector<float> lpf;
+  lpf.resize(x.size());
+  float cutoff_fl = 2000; // CUT-OFF FREQUENCY
+  int k = (cutoff_fl/rate)*x.size(); // FFT index
+
+  for(int n = 0;n < k; n++){
+    lpf[n] = 0;
+  } 
+  for(int n = k; n < x.size(); n++){
+    lpf[n] = 1;
+  } 
+  for(int n = 0 ; n < Xlow.size(); n++){
+    Xlow[n] *= lpf[n];
+  }
+
+   // ANTITRANSFORM
+   fft_object1.do_ifft (Xlow.data(), x.data());
+   fft_object1.rescale (x.data());
+ // ==================================================================================================*/
   ```
 
   * Técnicas de postprocesado: filtro de mediana, *dynamic time warping*, etc.
