@@ -278,6 +278,21 @@ Ejercicios de ampliación
   ```
 
   * Técnicas de postprocesado: filtro de mediana, *dynamic time warping*, etc.
+  > Se ha implementado una version del filtro de mediana:
+  ```c
+  unsigned int M = 3;
+  vector<float> median_window(M);
+
+  for (unsigned int i = (M-1)/2; i < f0.size() - (M-1)/2; i++){
+    for (int m = 0; m < M; m++){
+      median_window[m]=f0[i+m-((M-1)/2)];
+    }
+    sort(median_window.begin(),median_window.end());
+
+    f0[i]=median_window[(M-1)/2]; // Agafar l'element central
+  }
+  ````
+
   * Métodos alternativos a la autocorrelación: procesado cepstral, *average magnitude difference function*
     (AMDF), etc.
   * Optimización **demostrable** de los parámetros que gobiernan el detector, en concreto, de los que
